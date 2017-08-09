@@ -1,0 +1,21 @@
+﻿<Window x:Class="PL.Views.MapWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+        xmlns:local="clr-namespace:PL.Views"
+        mc:Ignorable="d"
+        d:DesignHeight="500" d:DesignWidth="500"
+      Title="Map">
+
+    <Grid>
+        <m:Map
+            Name="map"
+            CredentialsProvider="Auiw20OzsW5gRHynguuJbuhhV2iwKikSvdT-L7_pU1K3sTkpPfQcuoJ3tldeA3jt"
+            AnimationLevel="Full"
+            Center="{Binding Location}"
+            
+             />
+    </Grid>
+</Window>

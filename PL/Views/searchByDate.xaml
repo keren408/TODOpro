@@ -1,0 +1,39 @@
+﻿<Window x:Class="PL.Views.searchByDate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:PL.Views"
+        mc:Ignorable="d"
+        Title="searchByDate" Height="200" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label  Content="Please enter the dates:"  Grid.ColumnSpan="1" />
+        <xctk:DateTimePicker x:Name="sDate"
+                                 Grid.Column="1" Grid.Row="1"
+                                 Format="Custom"
+                                 FormatString ="dd-MM-yyyy HH:mm"
+                                 DisplayDefaultValueOnEmptyText ="True"
+         
+                                 Text="{Binding StartDate}"/>
+        <xctk:DateTimePicker x:Name="eDate"
+                                 Grid.Column="1" Grid.Row="2"
+                                 Format="Custom"
+                                 FormatString ="dd-MM-yyyy HH:mm"
+                                 DisplayDefaultValueOnEmptyText ="True"
+                                 Text="{Binding EndDate}"/>
+        <Label Content="Start Date:" Grid.Row="1"/>
+        <Label Content="End Date:"  Grid.Row="2"/>
+        <Button Content="ok" Grid.Row="3" Grid.ColumnSpan="2" Command="{Binding OkBut}"/>
+    </Grid>
+</Window>

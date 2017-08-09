@@ -1,0 +1,4 @@
+C:\Users\Keren\Desktop\TODO\TODOpro\BE\bin\Debug\BE.dll
+C:\Users\Keren\Desktop\TODO\TODOpro\BE\bin\Debug\BE.pdb
+C:\Users\Keren\Desktop\TODO\TODOpro\BE\obj\Debug\BE.dll
+C:\Users\Keren\Desktop\TODO\TODOpro\BE\obj\Debug\BE.pdb

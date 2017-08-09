@@ -1,0 +1,21 @@
+﻿<Window x:Class="PL.Views.searchByTopic"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL.Views"
+        mc:Ignorable="d"
+        Title="searchByTopic" Height="150" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Content="ok" Grid.Row="2" Click="Button_Click"/>
+        <Label Content="Please enter the topic:" />
+        <TextBox x:Name="TextBox" TextChanged="TextBox_TextChanged" Text="" Grid.Row="1"/>
+
+    </Grid>
+</Window>
