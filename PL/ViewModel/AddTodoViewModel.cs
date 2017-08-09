@@ -42,12 +42,74 @@ namespace PL.ViewModel
             MainWindowViewModel.doneAddingTodo(this, null);
         }
 
-        public string Title { get => title; set { current.Title = value; title = value; } }
-        public string Desc { get => desc; set { current.Description = value; desc = value; } }
-        public string Address { get => address; set { current.Address = value; address = value; } }
-        public string Color { get => color; set { current.Color = value; color = value; } }
-        public string Date { get => date.ToString("dd-MM-yyyy HH:mm"); set { current.Date = Convert.ToDateTime(value); date = Convert.ToDateTime(value); } }
-        public string WhenToRemind { get => whenToRemind.ToString("dd-MM-yyyy HH:mm"); set { current.WhenToRemind = Convert.ToDateTime(value); whenToRemind = Convert.ToDateTime(value); } }
+        public string Title {
+            get
+            {
+                return title;
+            }
+            set {
+                current.Title = value;
+                title = value;
+            }
+        }
+        public string Desc {
+            get
+            {
+                return desc;
+            }
+            set
+            {
+                current.Description = value;
+                desc = value;
+            }
+        }
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                current.Address = value;
+                address = value;
+            }
+        }
+        public string Color
+        {
+            get
+            {
+                return color;
+            }
+            set
+            {
+                current.Color = value;
+                color = value;
+            }
+        }
+        public string Date
+        {
+            get
+            {
+                return date.ToString("dd-MM-yyyy HH:mm");
+            }
+            set {
+                current.Date = Convert.ToDateTime(value);
+                date = Convert.ToDateTime(value);
+            }
+        }
+        public string WhenToRemind
+        {
+            get
+            {
+                return whenToRemind.ToString("dd-MM-yyyy HH:mm");
+            }
+            set
+            {
+                current.WhenToRemind = Convert.ToDateTime(value);
+                whenToRemind = Convert.ToDateTime(value);
+            }
+        }
         //public bool Clickable { get => check(); }
         //bool check()
         //{
@@ -56,12 +118,18 @@ namespace PL.ViewModel
 
         public ICommand SaveCommand
         {
-            get => saveCommand;
+            get
+            {
+                return saveCommand;
+            }
         }
        
         public colors PlatteColor
         {
-            get => platteColor;
+            get
+            {
+                return platteColor;
+            }
             set { setColor(value); platteColor = value; }
         }
 
@@ -69,7 +137,6 @@ namespace PL.ViewModel
         //public DateTime WhenToRemind { get => whenToRemind; set { current.WhenToRemind = value; whenToRemind = value; } }
         public void setColor(BE.colors color)
         {
-            int x = 5;
             switch (color)
             {
                 case colors.RED: // red

@@ -32,9 +32,31 @@ namespace PL.ViewModel
             this.model = new DisplayMyTodoModel(this);
             itemList = model.getAllTodo((item)=>item.Title.Contains(SearchSyTopic));
         }
-        public List<TodoItem> ItemList { get => itemList; set { itemList = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ItemList")); } }
+        public List<TodoItem> ItemList
+        {
+            get
+            {
+                return itemList;
+            }
+            set
+            {
+                itemList = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ItemList"));
+            }
+        }
 
-        public TodoItem CurrentSelected { get => currentSelected; set { currentSelected = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CurrentSelected")); } }
+        public TodoItem CurrentSelected
+        {
+            get
+            {
+                return currentSelected;
+            }
+            set
+            {
+                currentSelected = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CurrentSelected"));
+            }
+        }
     
         public event PropertyChangedEventHandler PropertyChanged;
     }

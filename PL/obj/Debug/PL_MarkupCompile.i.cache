@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Keren\Desktop\TODO\TODOpro\PL\obj\Debug\
+C:\Users\rotem\Desktop\TODOpro\PL\obj\Debug\
 PL
 none
 false
 DEBUG;TRACE
-C:\Users\Keren\Desktop\TODO\TODOpro\PL\App.xaml
+C:\Users\rotem\Desktop\TODOpro\PL\App.xaml
 10-2021060855
 
-29-1387861020
-261853105519
+29-1936361358
+26-278330643
 MainWindow.xaml;Views\AddTodoPage.xaml;Views\Clock.xaml;Views\ColorPlatte.xaml;Views\DisplayMyTodo.xaml;Views\DisplayOneTodo.xaml;Views\DisplayOneTodoPage.xaml;Views\MapWindow.xaml;Views\searchByDate.xaml;Views\searchByTopic.xaml;
 
 True

@@ -33,17 +33,90 @@ namespace BE
         }
         
 
-        public string Title { get => title; set => title = value; }
-        public string Description { get => description; set => description = value; }
-        public string Color { get => color; set { color = value; } }
-        public string Id { get => id; set => id = value; }
-        public string Address { get => address; set => address = value; }
-        public string Place { get => place; set => place = value; }
-        public DateTime Date { get => date; set => date = value; }
-        public DateTime WhenToRemind { get => whenToRemind; set => whenToRemind= value; }
-
-
-
+        public string Title {
+            get
+            {
+                return title;
+            }
+            set
+            {
+                title = value;
+            }
+        }
+        public string Description
+        {
+            get
+            {
+                return description;
+            }
+            set
+            {
+                description = value;
+            }
+        }
+        public string Color {
+            get
+            {
+                return color;
+            }
+            set
+            {
+                color = value;
+            }
+        }
+        public string Id
+        {
+            get
+            {
+                return id;
+            }
+            set
+            {
+                id = value;
+            }
+        }
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                address = value;
+            }
+        }
+        public string Place
+        {
+            get
+            {
+                return place;
+            }
+            set
+            {
+                place = value;
+            }
+        }
+        public DateTime Date {
+            get
+            {
+                return date;
+            }
+            set {
+                date = value;
+            }
+        }
+        public DateTime WhenToRemind
+        {
+            get
+            {
+                return whenToRemind;
+            }
+            set
+            {
+                whenToRemind = value;
+            }
+        }
 
     }
 }

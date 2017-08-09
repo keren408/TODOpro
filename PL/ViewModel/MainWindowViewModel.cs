@@ -42,12 +42,72 @@ namespace PL.ViewModel
             navigatingToDisplayPage(null,null);
         }
 
-        public ICommand NewTodoCommand { get => newTodoCommand; private set => newTodoCommand = value; }
-        public ICommand TopicCommand { get => topicCommand; private set => topicCommand = value; }
-        public ICommand DateCommand { get => dateCommand; private set => dateCommand = value; }
-        public ICommand DeleteTodoCommand { get => deleteTodoCommand; set => deleteTodoCommand = value; }
-        public ICommand UpdateTodoCommand { get => updateTodoCommand; set => updateTodoCommand = value; }
-        public ICommand ViewAllTodoCommand { get => viewAllTodoCommand; set => viewAllTodoCommand = value; }
+        public ICommand NewTodoCommand
+        {
+            get
+            {
+                return newTodoCommand;
+            }
+            private set
+            {
+                newTodoCommand = value;
+            }
+        }
+        public ICommand TopicCommand
+        {
+            get
+            {
+                return topicCommand;
+            }
+            private set
+            {
+                topicCommand = value;
+            }
+        }
+        public ICommand DateCommand
+        {
+            get
+            {
+                return dateCommand;
+            }
+            private set
+            {
+                dateCommand = value;
+            }
+        }
+        public ICommand DeleteTodoCommand
+        {
+            get
+            {
+                return deleteTodoCommand;
+            }
+            set
+            {
+                deleteTodoCommand = value;
+            }
+        }
+        public ICommand UpdateTodoCommand
+        {
+            get
+            {
+                return updateTodoCommand;
+            }
+            set
+            {
+                updateTodoCommand = value;
+            }
+        }
+        public ICommand ViewAllTodoCommand
+        {
+            get
+            {
+                return viewAllTodoCommand;
+            }
+            set
+            {
+                viewAllTodoCommand = value;
+            }
+        }
 
         private void SearchByDateAction()
         {
@@ -119,7 +179,10 @@ namespace PL.ViewModel
         }
 
         public Page CurrentPage {
-            get => currentPage;
+            get
+            {
+                return currentPage;
+            }
             set {
                 currentPage = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CurrentPage"));
